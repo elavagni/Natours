@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;   
+    box-sizing: inherit;
+}
+
+html {
+    /*This defines what 1rem is    
+    (1 rem = 1 root font size, so 1 rem = 10px 
+    100% = 16px, since we want the root size to be 10px, we use the following formula (10/16 = 0.625, so thi is 62.5%)
+    )*/
+    font-size: 62.5%;/*10px*/
+}
+
+body {
+    box-sizing: border-box;
+}
