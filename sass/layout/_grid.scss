@@ -1,9 +1,9 @@
 .row {
     max-width: $grid-width;
-    background-color: #eee;
     margin: 0 auto;
-    color: $color-white;
-
+    //color: $color-white;
+    //background-color: #eee;
+    
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
     }
@@ -13,7 +13,7 @@
     //^ = starts with
     //$ = ends with
     [class^="col-"] {
-        background-color: orangered;
+        //background-color: orangered;
         float: left;
         
         &:not(:last-child) {
