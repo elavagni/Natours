@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <!--<link rel="stylesheet"  href="css/icon-font.css">-->
+    <!-- <link rel="stylesheet"  href="css/icon-font.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
@@ -81,7 +81,7 @@
                             sizes="(max-width: 56.25em) 20vw, (max-width: 600px) 30vw, 300px" 
                             alt="Photo 1"
                             class="composition__photo composition__photo--p1"
-                            src="img/nat-7-large.jpg">
+                            src="img/nat-1-large.jpg">
 
                         <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
                             sizes="(max-width: 56.25em) 20vw, (max-width: 600px) 30vw, 300px" 
@@ -277,7 +277,10 @@
             <div class="row">
                 <div class="story">
                     <figure class="story__shape">
-                        <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
+                        <img srcset="img/nat-8-small.jpg 300w, img/nat-8.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 600px) 30vw, 300px" 
+                            alt="Person on a tour" class="story__img"
+                            src="img/nat-8.jpg">
                         <figcaption class="story__caption">Mary Smith</figcaption>
                     </figure>
                     <div class="story__text">
@@ -293,7 +296,11 @@
             <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
+                            <img srcset="img/nat-9-small.jpg 300w, img/nat-9.jpg 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 600px) 30vw, 300px" 
+                                alt="Person on a tour" 
+                                class="story__img"
+                                src="img/nat-9.jpg">
                             <figcaption class="story__caption">Jack Wilson</figcaption>
                         </figure>
                         <div class="story__text">
@@ -402,9 +409,15 @@
 
     <div class="popup" id="popup">
         <div class="popup__content">
-            <div class="popup__left">
-                <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-                <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+            <div class="popup__left">                
+                <img srcset="img/nat-8-small.jpg 300w, img/nat-8.jpg 1000w"
+                    sizes="(max-width: 56.25em) 20vw, (max-width: 600px) 30vw, 300px" 
+                    alt="Tour photo" class="popup__img"
+                    src="img/nat-8.jpg">
+                <img srcset="img/nat-9-small.jpg 300w, img/nat-9.jpg 1000w"
+                    sizes="(max-width: 56.25em) 20vw, (max-width: 600px) 30vw, 300px" 
+                    alt="Tour photo" class="popup__img"
+                    src="img/nat-9.jpg">
             </div>
             <div class="popup__right">
                 <a href="#section-tours" class="popup__close">&times;</a>
