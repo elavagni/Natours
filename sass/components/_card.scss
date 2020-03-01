@@ -60,17 +60,39 @@
         
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
-            url(../img/nat-5.jpg)
+            url(../img/nat-5-small.jpg);
+
+            @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+                   only screen and (webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+                   only screen and (min-width: 125em) {
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+                url(../img/nat-5.jpg);         
+            }  
+
         }
 
         &--2 {
             background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-            url(../img/nat-7.jpg)
+            url(../img/nat-6-small.jpg);
+
+            @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+                   only screen and (webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+                   only screen and (min-width: 125em) {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+                url(../img/nat-6.jpg);
+            }
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom, $color-terciary-light, $color-terciary-dark),
-            url(../img/nat-7.jpg)
+            url(../img/nat-7-small.jpg);
+
+            @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+                   only screen and (webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+                   only screen and (min-width: 125em) {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+                url(../img/nat-7.jpg);
+            }
         }
     }
 
@@ -158,7 +180,10 @@
     
     
     
-    @include respond(tab-port) {       
+    //@include respond(tab-port) {       
+    @media only screen and (max-width: 56.25em),
+           //and only apply to touch screen devices (where hover is not allowed)
+           only screen and (hover: none) { 
         height: auto;
         border-radius: 3px;         
         background-color: $color-white;
